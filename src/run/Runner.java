@@ -1,9 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package run;
+
+import hash.SHA256;
+import java.math.BigInteger;
+import java.util.Arrays;
 
 /**
  *
@@ -14,6 +13,8 @@ public class Runner {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String test="12345";
+        SHA256 sha256=new SHA256();
+        System.out.println(sha256.update(test));
     }
 }
